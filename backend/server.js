@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const geoip = require('geoip-lite');
 
-const { requestLogger, logEvent } = require('./middleware/logger');
+const { requestLogger, logEvent } = require('../middleware/logger');
 const shorturlsRouter = require('./routes/shorturls');
 const logsRouter = require('./routes/logs');
 const ShortUrl = require('./models/ShortUrl');
